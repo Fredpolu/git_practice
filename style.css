@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #1a237e;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav button {
+  margin-right: 5px;
+}
+#calendar {
+  margin: 10px;
+}
+.week-grid {
+  display: flex;
+  border: 1px solid #ccc;
+  height: 720px; /* 12 hours * 60px */
+}
+.day-column {
+  flex: 1;
+  border-left: 1px solid #eee;
+  position: relative;
+}
+.day-column:first-child {
+  border-left: none;
+}
+.hour-slot {
+  height: 60px;
+  border-bottom: 1px solid #eee;
+}
+.event {
+  position: absolute;
+  color: white;
+  padding: 2px;
+  cursor: move;
+  border-radius: 4px;
+  font-size: 12px;
+  left: 0;
+  right: 0;
+}
+.agenda-list {
+  list-style: none;
+  padding: 0;
+}
+.agenda-list li {
+  margin: 5px 0;
+}
